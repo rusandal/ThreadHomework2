@@ -19,6 +19,6 @@ public class Main {
         final ExecutorService threadPool = Executors.newFixedThreadPool(4);
         Integer result = threadPool.invokeAny(myTreads);
         System.out.println("Количество сообщений " + result);
-        threadPool.shutdownNow();
+        threadPool.shutdown();
     }
 }
